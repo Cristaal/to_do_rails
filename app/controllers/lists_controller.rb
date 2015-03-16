@@ -36,4 +36,7 @@ class ListsController < ApplicationController
     @list = List.find(params[:id])
     render :show
   end
+
+  # def destroy
+  #   @list = List.find(params[:id])
 end
