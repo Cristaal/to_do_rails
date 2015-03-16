@@ -16,7 +16,7 @@ class ListsController < ApplicationController
   def update
     @list = List.find(params[:id])
     if @list.update(params[:list])
-      redirect_to lists_path
+      redirect_to list_path(@list)
     else
       render :edit
     end
